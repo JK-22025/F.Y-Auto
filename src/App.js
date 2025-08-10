@@ -22,7 +22,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login onLogin={handleLogin} />} />
+        <Route path="/" element={<Signup onSignup={handleSignup} />} />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
       </Routes>
     </Router>
   );
